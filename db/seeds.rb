@@ -2,9 +2,9 @@ require 'faker'
 
 puts "Destroying DBS !!!"
 
-Flat.destroy_all!
-User.destroy_all!
-Renting.destroy_all!
+Flat.destroy_all
+User.destroy_all
+Renting.destroy_all
 
 puts "DB DOWN"
 

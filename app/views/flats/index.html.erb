@@ -1,7 +1,18 @@
-<h1>Flats from batch 799</h1>
+<div class="content-container">
+  <h1>Flats from batch 799</h1>
 
-<ul>
-<% @flats.each do | flat | %>
-<li>
-<%= flat.name %> | <%= flat.price %>
-</li></ul>
+
+  <% @flats.each do | flat | %>
+    <div class="card-trip">
+      <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+      <div class="card-trip-infos">
+        <div>
+          <h2><%= flat.address %></h2>
+          <p><%= flat.description %></p>
+        </div>
+        <h2 class="card-trip-pricing"><%= flat.price %> €</h2>
+        <%# <img src="https://kitt.lewagon.com/placeholder/users/krokrob" class="card-trip-user avatar-bordered" /> %>
+      </div>
+  </div>
+  <% end %>
+</div>
